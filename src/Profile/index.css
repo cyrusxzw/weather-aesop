@@ -1,0 +1,46 @@
+.profile-wrapper {
+  background-color: #f6f5e8;
+  height: 100vh;
+}
+
+.profile-head {
+  text-align: center;
+  padding: 30px;
+}
+
+.profile-content {
+  padding: 0 20px;
+}
+
+.profile-block {
+  font-size: 16px;
+  height: 60px;
+  box-shadow: 1px 6px 10px #0000001f;
+  border-radius: 10px;
+  padding: 0 20px;
+  background: #fffef0;
+  margin-bottom: 20px;
+}
+
+.profile-block span {
+  line-height: 60px;
+}
+
+.profile-icon {
+  margin-right: 10px;
+}
+
+.profile-arrow {
+  float: right;
+  margin-top: 22px;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.profile-top h5{
+  margin-top: 10px;
+}

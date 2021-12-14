@@ -1,0 +1,48 @@
+.location-section {
+  background-color: #fffef0;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.img-location {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.location-border {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #333;
+  border-radius: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-border img {
+  width: 30px;
+  height: 30px;
+}
+
+.location-search {
+  padding: 20px;
+  text-align: center;
+}
+
+.location-search button {
+  width: 100%;
+  background-color: #333;
+  border-color: #333;
+  height: 45px;
+}
+
+.location-search input {
+  background-color: #fffef0;
+  height: 45px;
+}
+
+.location-search input::placeholder {
+  color: #333;
+}

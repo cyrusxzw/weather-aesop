@@ -1,0 +1,19 @@
+.img-active {
+  border: 3px solid grey;
+}
+
+.single-question input, .single-question button {
+  background: #C4C4C4;
+  border: 0;
+  border-bottom: 1px solid;
+  box-shadow: none;
+  max-height: 31px;
+}
+
+.single-question .ant-input-group-addon {
+  background: #C4C4C4;
+}
+
+.single-question input::placeholder{
+  color: gray;
+}
