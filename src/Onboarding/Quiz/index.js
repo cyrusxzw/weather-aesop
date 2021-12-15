@@ -43,7 +43,9 @@ const Quiz = ({ question }) => {
       {type === 'input' && (
         <>
           <div className='single-question'>
-            <img src='/Group-976.png' alt="" />
+            <div className='bottle-container'>
+              <img src='/bottle.png' alt="" />
+            </div>
             <h2>{title}</h2>
             <h5>{query}</h5>
             <Search placeholder='Example: Ressurection Hand Balm' style={{ width: 300 }} />

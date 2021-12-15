@@ -16,3 +16,19 @@
 .single-question input::placeholder{
   color: #fffef0;
 }
+
+.bottle-container {
+  height: 61px;
+  width: 61px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottle-container img {
+  height: 38px;
+  width: 16px;
+}

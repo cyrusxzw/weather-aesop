@@ -14,7 +14,7 @@ const Weather = () => {
     const API_KEY = 'd0f74ee2b252941d10e4a89d81fb639e';
     const url = `https://api.openweathermap.org/data/2.5/weather?id=${city}&appid=${API_KEY}&units=metric`;
     axios.get(url)
-      .then(res => setWeather(res.data.main))
+      .then(res => setWeather(res.data))
       .catch(error => console.log(error));
   }
 
@@ -43,10 +43,12 @@ const Weather = () => {
     }
   }
 
-  const currentTemp = weather ? weather.temp.toFixed() : '';
-  const maxTemp = weather && weather.temp_max.toFixed();
-  const minTemp = weather && weather.temp_min.toFixed();
-  const humidity = weather && weather.humidity.toFixed();
+  const currentTemp = weather ? weather.main.temp.toFixed() : '';
+  const maxTemp = weather && weather.main.temp_max.toFixed();
+  const minTemp = weather && weather.main.temp_min.toFixed();
+  const humidity = weather ? weather.main.humidity.toFixed() : '';
+  const description = weather && weather.weather[0].main;
+  const icon = weather && `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
 
   return (
     <>
@@ -59,11 +61,11 @@ const Weather = () => {
         <div className='panel-main'>
           <div className='panel-img'>
             <div className='img-left'>
-              <img src="/Sun.png" alt="" />
+              <img src={icon} alt="" />
             </div>
             <div className='img-right'>
               <h2 className='currentTemp'>{`${currentTemp}°`}</h2>
-              <p>Sunny</p>
+              <p>{description}</p>
               <p>{`${maxTemp}°/${minTemp}°`}</p>
             </div>
           </div>

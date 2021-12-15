@@ -1,6 +1,6 @@
 .home-wrapper {
   height: 100vh;
-  background: url("../bg.jpg") no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
 }
 
