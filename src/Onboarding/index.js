@@ -22,19 +22,7 @@ const Onboarding = () => {
       type: 'input',
       title: 'My products',
       qn: 'Add your current Aesop products to your profile',
-    },
-    {
-      id: 3,
-      type: 'choice',
-      title: 'Others',
-      qn: 'What is balabala?',
-      options: [
-        'A',
-        'B',
-        'C',
-        'D'
-      ]
-    },
+    }
   ]
 
   const myRef = useRef(null);

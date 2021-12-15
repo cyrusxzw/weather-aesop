@@ -7,6 +7,11 @@ const Profile = () => {
 
   return (
     <div className='profile-wrapper'>
+      <div className='exit-container'>
+        <NavLink to="/">
+          <img src="/x.png" alt="" />
+        </NavLink>
+      </div>
       <div className='profile-head'>
         <h1>
           James Smith
@@ -22,7 +27,7 @@ const Profile = () => {
           </div>
           <div className='top-single-section'>
             <img src="/top-icon.png" alt="" />
-            <h5>Skin type</h5>
+            <h5>Your goal</h5>
           </div>
         </div>
       </div>

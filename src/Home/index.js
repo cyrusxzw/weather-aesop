@@ -1,19 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Weather from "../Weather";
+import Header from "../Header";
 import './index.css';
 
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <div className="home-top">
-        <NavLink to="/profile">
-          <div className="home-profile-container">
-            <img src="/people_alt.png" alt="" />
-          </div>
-        </NavLink>
-        <div className="logo">
-          <img src="" alt="" />
-        </div>
+      <Header />
+      <div className="home-body">
+        <h2 className="home-hello">Good morning, James</h2>
+        <Weather />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .onboarding-wrapper {
   position: fixed;
   height: 100vh;
-  background-color:#C4C4C4;
+  background-color: #fffef0;
   border-radius: 40px 40px 0 0;
   width: 100%;
   z-index: 9;
@@ -17,15 +17,15 @@
 }
 
 .single-question h2 {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 24px;
 }
 
-.single-question h5{
+.single-question h5 {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .single-question {
@@ -42,12 +42,6 @@
   text-align: center;
 }
 
-.select-wrapper {
-  display: grid;
-  grid-column-gap: 50px;
-  grid-template-columns: 1fr 1fr;
-}
-
 .select-wrapper h5 {
   margin-top: 10px;
 }
@@ -56,25 +50,28 @@
   margin: 0 auto;
 }
 
-.img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  border-radius: 20px;
-  height: 120px;
-  width: 120px;
-  background-color: white;
+.select-container button {
+  border-radius: 40px;
+  width: 297px;
+  height: 50px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-.img-container img {
-  height: 50px;
-  width: 50px;
+.select-container .ant-btn:focus{
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
 }
 
 .next-btn {
+  background-color: #333;
+  color: #fff;
   font-size: 14px;
   margin: 0 auto;
-  width: 90%;
+  width: 316px;
+  height: 60px;
   display: none;
 }
 
@@ -83,7 +80,7 @@
 }
 
 .skip {
-  color: white;
+  color: #333;
   font-size: 14px;
   position: absolute;
   right: 40px;

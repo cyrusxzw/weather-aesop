@@ -1,0 +1,45 @@
+.weather-panel {
+  background-color: #fffef2;
+}
+
+.panel-top {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 20px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.panel-top .profile-arrow {
+  margin-top: 5px;
+}
+
+.panel-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.currentTemp {
+  font-size: 36px;
+  margin-bottom: -10px;
+}
+
+.img-right p {
+  margin-bottom: 0;
+}
+
+.img-right {
+  text-align: center;
+}
+
+.panel-bottom {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.panel-bottom-title {
+  font-size: 24px;
+}
